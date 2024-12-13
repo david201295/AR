@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <title>AR con A-Frame y AR.js</title>
@@ -8,23 +8,24 @@
     </head>
     <body style="margin: 0; overflow: hidden;">
 
-     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;"> 
+        <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;"> 
 
-        <a-assets>
-            <a-asset-item id="banjo" src="banjo.glb"></a-asset-item>
-            <a-asset-item id="grunty" src="grunty.glb"></a-asset-item>
-        </a-assets>
+            <a-assets>
+                <a-asset-item id="banjo" src="banjo.glb"></a-asset-item>
+                <a-asset-item id="grunty" src="grunty.glb"></a-asset-item>
+            </a-assets>
 
-        <a-marker type="pattern" url="pattern-pieza.patt">
+            <a-marker type="pattern" url="pattern-pieza.patt">
                 <a-entity gltf-model="#banjo" rotation="0 0 0" position="0 0 0" scale="0.1124 0.1124 0.1124"></a-entity>
-        </a-marker>
-        
-        <a-marker type="pattern" url="pattern-grunty.patt">
-            <a-entity gltf-model="#grunty" rotation="0 90 0" position="0 0 0" scale="0.1124 0.1124 0.1124"></a-entity>
-        </a-marker>
+            </a-marker>
 
-         <a-entity camera></a-entity>
-            
-     </a-scene>
+            <a-marker type="pattern" url="pattern-grunty.patt">
+                <a-entity gltf-model="#grunty" rotation="0 90 0" position="0 0 0" scale="0.1124 0.1124 0.1124"></a-entity>
+            </a-marker>
+
+            <a-entity camera></a-entity>
+                
+        </a-scene>
 
     </body>
+</html>
