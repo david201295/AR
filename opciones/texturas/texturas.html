@@ -10,52 +10,49 @@
 
         <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;"> 
 
+            <!-- Primer marcador con caja -->
+            <a-marker type="pattern" url="pattern-01.patt">
+                <a-box position="0 0.5 0" rotation="0 0 0" scale="0.5 0.5 0.5"
+                    material="src: url(PavingStones122_1K-JPG_Color.jpg);
+                    roughnessMap: url(PavingStones122_1K-JPG_Roughness.jpg);
+                    normalMap: url(PavingStones122_1K-JPG_NormalGL.jpg);
+                    repeat: 0.5 0.5;">
+                </a-box>
+            </a-marker> 
 
-        <a-marker type="pattern" url="pattern-01.patt">
-            <a-box position="0 0.5 0" rotation="-57 -5 -4.5" radius-bottom="0.5" 
-            height="1"  material="
-            src: url(PavingStones122_1K-JPG_Color.jpg);
-            roughnessMap: url(PavingStones122_1K-JPG_Roughness.jpg);
-            normalMap: url(PavingStones122_1K-JPG_NormalGL.jpg);
-            repeat: 0.5 0.5;"
-            scale="0.5 0.5 0.5">
-            </a-box>
-        </a-marker>	
+            <!-- Segundo marcador con plano -->
+            <a-marker type="pattern" url="pattern-17.patt">
+                <a-plane position="0 0.5 0" rotation="0 0 0" scale="0.5 0.5 0.5"
+                    material="src: url(RoofingTiles014B_1K-JPG_Color.jpg);
+                    roughnessMap: url(RoofingTiles014B_1K-JPG_Roughness.jpg);
+                    normalMap: url(RoofingTiles014B_1K-JPG_NormalGL.jpg);
+                    repeat: 0.5 0.5;">
+                </a-plane>
+            </a-marker>
 
-        <a-marker type="pattern" url="pattern-17.patt">
-            <a-plane position="0 0.5 0" rotation="-57 -5 -4.5" radius-bottom="0.5" 
-            height="1"  material="
-            src: url(RoofingTiles014B_1K-JPG_Color.jpg);
-            roughnessMap: url(RoofingTiles014B_1K-JPG_Roughness.jpg);
-            normalMap: url(RoofingTiles014B_1K-JPG_NormalGL.jpg);
-            repeat: 0.5 0.5;"
-            scale="0.5 0.5 0.5">
-            </a-plane>
-        </a-marker>	
-        <a-marker type="pattern" url="pattern-17.patt">
-            <a-plane position="0 0.5 0" rotation="-57 -5 -4.5" radius-bottom="0.5" 
-            height="1"  material="
-            src: url(Grass002_1K-JPG_Color.jpg);
-            roughnessMap: url(Grass002_1K-JPG_Roughness.jpg);
-            normalMap: url(Grass002_1K-JPG_NormalGL.jpg);
-            repeat: 0.5 0.5;"
-            scale="0.5 0.5 0.5">
-            </a-plane>
-        </a-marker>	
-        <a-marker type="pattern" url="pattern-31.patt">
-            <a-cylinder position="0 0.5 0" rotation="-57 -5 -4.5" radius-bottom="0.5" 
-                height="1"  material="
-                src: url(Concrete032_1K-JPG_Color.jpg);
-                roughnessMap: url(Concrete032_1K-JPG_Roughness.jpg);
-                normalMap: url(Concrete032_1K-JPG_NormalGL.jpg);
-                repeat: 0.5 0.5;"
-                scale="0.5 0.5 0.5">
-            </a-cylinder>
-        </a-marker>	
+            <!-- Tercer marcador con plano adicional -->
+            <a-marker type="pattern" url="pattern-17.patt">
+                <a-plane position="0 0.5 0" rotation="0 0 0" scale="0.5 0.5 0.5"
+                    material="src: url(Grass002_1K-JPG_Color.jpg);
+                    roughnessMap: url(Grass002_1K-JPG_Roughness.jpg);
+                    normalMap: url(Grass002_1K-JPG_NormalGL.jpg);
+                    repeat: 0.5 0.5;">
+                </a-plane>
+            </a-marker>
 
-            <a-entity camera>
-            </a-entity> 
+            <!-- Cuarto marcador con cilindro -->
+            <a-marker type="pattern" url="pattern-31.patt">
+                <a-cylinder position="0 0.5 0" rotation="0 0 0" scale="0.5 0.5 0.5"
+                    material="src: url(Concrete032_1K-JPG_Color.jpg);
+                    roughnessMap: url(Concrete032_1K-JPG_Roughness.jpg);
+                    normalMap: url(Concrete032_1K-JPG_NormalGL.jpg);
+                    repeat: 0.5 0.5;">
+                </a-cylinder>
+            </a-marker>
+
+            <!-- Cámara para la visualización de AR -->
+            <a-entity camera></a-entity> 
+
         </a-scene>
     </body>
-
 </html>
